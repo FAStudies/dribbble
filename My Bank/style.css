@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  background: rgb(39, 42, 43);
+  color: white;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin: 12px;
+}
+
+.topbar {
+    padding-left: 4rem;
+    padding-top: 4rem;
+  display: flex;
+}
+.full {
+  height: 100vh;
+}
+
+.center {
+  place-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.hero {
+    padding-top: 10rem;
+    padding-left: 4rem;
+    width: 40vw;
+}
+

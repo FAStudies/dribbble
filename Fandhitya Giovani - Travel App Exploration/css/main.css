@@ -1,0 +1,182 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.scroll-row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow-x: scroll;
+}
+
+.list-gap {
+  margin-right: 1.2rem;
+}
+
+.roundButton {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  background: none;
+  border: 2px solid #f0f0f0;
+}
+
+.roundButton svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.roundButton img {
+  width: 4rem;
+}
+
+.topbarhidden {
+  height: 8rem;
+}
+
+.imgcard {
+  overflow: hidden;
+  position: relative;
+  height: 50vw;
+  border-radius: 2rem;
+}
+
+.imgcard img {
+  height: 100%;
+  width: 100%;
+}
+
+.imgcard .content {
+  color: white;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  fill: white;
+}
+
+.imgcard .content .cardTitle {
+  font-size: 1.2rem;
+}
+
+.imgcard .content .cardSubtitle {
+  opacity: 0.5;
+}
+
+.imgcard .content .cardSubtitle .icon {
+  width: 1rem;
+  height: 1rem;
+  padding-top: 0.1rem;
+}
+
+.imgcard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000000), to(#000000ff));
+  background: linear-gradient(#00000000, #000000ff);
+  margin-top: 20%;
+}
+
+.topBar {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+}
+
+.categoryCard {
+  border: 1px solid #f0f0f0;
+  border-radius: 3rem;
+  width: 36vw;
+  height: 36vw;
+  padding: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.5fr 0.5fr;
+      grid-template-rows: 0.5fr 0.5fr;
+  place-items: center;
+}
+
+.categoryCard img {
+  width: 80%;
+  height: 80%;
+}
+
+.categoryCard h3 {
+  place-self: top;
+}
+
+.page-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.page-indicator li {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0.4rem 0rem;
+  background: pink;
+}
+
+.page-indicator :first-child {
+  width: 1rem;
+}
+
+section {
+  padding: 2rem;
+  position: relative;
+}
+/*# sourceMappingURL=main.css.map */
